@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Blog</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="blog.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
+
+</head>
+<body>
+
+	<nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top">
+        <p class="navbar-brand"><strong>My Blog</strong></p>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navLinks">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">ABOUT ME</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#cont" class="nav-link">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section class="container-fluid px-0">
+        <div class="row align-items-center content">
+            <div class="col-md-6 order-2 order-md-1">
+                <img src="SnehalS.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-6 text-center order-1 order-md-2">
+                <div class="row justify-content-center">
+                    <p><h1 class="name" style="font-size: 32px margin-bottom: 15px">Suryavanshi Snehal Balkrishna</h1></p>
+                    <p style="font-size: 25px">Web Developing Enthusiast</p>
+                    <div class="blurb  mb-md-5">
+                        <p class="lead">Hey! I am Snehal, pursuing B.Tech degree in IT (Information Technology) branch from Indian Institute of Information Technology, Allahabad. I am passionate about developing web applications.</p>
+                        <p class="lead">Besides Web Development, I also do Competitive Programming in programming languages like C, C++, Python. I like to contribute in OpenSource projects which boost my skills.</p>
+                        <p class="lead">Apart from Technical skills, I also like Sketching, Singing and reading Novels.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="well well-lg header-bottom">
+        <div class="shape">
+            <p id="cont" class="text">Reach me at:</p>
+        </div>
+        </div>
+
+        <div class="jumbotron">
+        <p id="contact"><i class="fa fa-envelope-square" aria-hidden="true" style="font-size:24px;"></i> 
+            <a id="contact" href="#">suryavanshisnehal28401@gmail.com</a>
+            <i class="fa fa-phone" aria-hidden="true" style="font-size:24px;"></i> <a href="#" id="contact">+91-9307396834</a>
+        </p>
+        <p>
+            <a id="contact" href="https://www.instagram.com/__snehal__s_/"><i class="fa fa-instagram" aria-hidden="true" style="font-size:24px;"></i> </a>
+            <a id="contact" href="https://github.com/snehal2841"><i class="fa fa-github" aria-hidden="true" style="font-size:24px;"></i></a>
+            <a id="contact" href="https://www.linkedin.com/in/snehal-suryavanshi-2b87921a4/"><i class="fa fa-linkedin" aria-hidden="true" style="font-size:24px;"></i></a>
+        </p>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $(document).scroll(function(){
+                var $nav = $("#mainNavbar");
+                $nav.toggleClass("scrolled",$(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+
+</body>
+</html>
